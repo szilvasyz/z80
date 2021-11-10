@@ -1,9 +1,8 @@
 class genmem():
 
-    m = {}
-    ro = False
-
     def __init__(self, start, size, readonly):
+        self.m = {}
+        self.ro = False
         for i in range(start, start + size):
             self.m[i] = 0xFF
             self.ro = readonly
